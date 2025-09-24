@@ -18,6 +18,8 @@ def clear():
     else:
         print("Unknown clear command for this system.")
 
+clear()
+
 def replace_key(dct, pagenum, old_key, new_key):
     try:
         dct[pagenum][new_key] = dct[pagenum].pop(old_key)
