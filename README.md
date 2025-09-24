@@ -7,11 +7,11 @@
 ## run in Linux/MacOS (UNIX-Systems)
 
 1. **open terminal in project folder**
-2. **and run**:
+2. **and run:**
 
 ```bash
-python3 words.py # for CLI
-python3 words-gui.py # for GUI
+python words.py # for CLI
+python words-gui.py # for GUI
 ```
 
-### Make sure you have python3 installed in your system.
+### Make sure you have python(3) installed in your system.
