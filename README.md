@@ -14,4 +14,4 @@ python words.py # for CLI
 python words-gui.py # for GUI
 ```
 
-### Make sure you have `python` and `Tkinter` installed in your system.
+### Make sure you have `python` and `tkinter` installed in your system.
