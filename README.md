@@ -1,7 +1,7 @@
 ## run in windows
 
-- **double click in 'run.bat' for run as Command-Line Interface (CLI)** 
-- **double click in 'run-gui.bat' for run as Graphical-User Interface (GUI)**
+- **double click in `run.bat` for run as Command-Line Interface (CLI)** 
+- **double click in `run-gui.bat` for run as Graphical-User Interface (GUI)**
 
 
 ## run in Linux/MacOS (UNIX-Systems)
