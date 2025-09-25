@@ -149,10 +149,10 @@ while True:
                 bangn = 1
                 while not enwrd:
                     if tmp:
-                        print("input is empty")
+                        print("input is empty").strip().capitalize()
                         enwrd = input("Please Enter English Word: ").strip().capitalize()
                     else:
-                        enwrd = input(f"English Word{'!'*bangn}: ")
+                        enwrd = input(f"English Word{'!'*bangn}: ").strip().capitalize()
                         bangn += 1
                     tmp = False
 
@@ -166,7 +166,7 @@ while True:
                         print("input is empty")
                         arwrd = input("Please Enter Arabic Word: ").strip().capitalize()
                     else:
-                        arwrd = input(f"Arabic Word{'!'*bangn}: ")
+                        arwrd = input(f"Arabic Word{'!'*bangn}: ").strip().capitalize()
                         bangn += 1
                     tmp = False
 
@@ -326,7 +326,7 @@ while True:
         while not nrep:
             if tmp:
                 print("input is empty")
-                nrep = input(f"please enter word to replace (English): '{orep}' to: ")
+                nrep = input(f"please enter word to replace (English): '{orep}' to: ").strip().capitalize()
             else:
                 nrep = (f"replace (English) '{orep}' to{'!'*bang}: ")
                 bang += 1
@@ -343,7 +343,7 @@ while True:
         print(f"old word: {jdb[page][orep]}")
         # leave it
         print("(you can leave it as it is with type: 'LEAVEIT')")
-        anrep = input('>: ').strip().lower()
+        anrep = input('>: ').strip().capitalize()
 
         # checking
         tmp = True
@@ -351,9 +351,9 @@ while True:
         while not anrep:
             if tmp:
                 print("input is space")
-                anrep = input(f"please enter a new Arabic word for '{nrep}': ")
+                anrep = input(f"please enter a new Arabic word for '{nrep}': ").strip().capitalize()
             else:
-                anrep = input(f"arabic word for {nrep}{'!'*bang}")
+                anrep = input(f"arabic word for {nrep}{'!'*bang}").strip().capitalize()
                 bang += 1
             tmp = False
 
@@ -401,14 +401,14 @@ while True:
             for i in jdb:
                 pages.append(i)
             print(tuple(int(i) for i in pages))
-            dpage = input('\nchoose page you want to delete: ')
+            dpage = input('\nchoose page you want to delete: ').strip()
             bang = 0
             tmp = True
             while dpage not in set(pages):
                 if tmp:
-                    dpage = input(f"please choose page you want to delete from list: \n{tuple([int(i) for i in pages])}: ")
+                    dpage = input(f"please choose page you want to delete from list: \n{tuple([int(i) for i in pages])}: ").strip()
                 else:
-                    dpage = input(f"choose avilable page{'!'*bang}: ")
+                    dpage = input(f"choose avilable page{'!'*bang}: ").strip()
                     bang += 1
                 tmp = False
             try:
